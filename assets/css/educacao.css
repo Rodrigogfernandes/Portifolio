@@ -1,79 +1,8 @@
-.acordeon {
-    display: flex;
-    flex-direction: column;
-    background: transparent;
-    margin-bottom: 10px;
-   
-    border: 1px solid #fff;
-    border-radius: 1rem;
-    position: relative;
-    transition: 0.5s;
+.educ {
+    flex-direction: row;    
+    font-weight: 600;
     
-}
+} 
 
-.contentEduc ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    font-size: 16px;
-    margin: 1rem;
-    padding: 5px ;
-    list-style: none;
-}
-.content li {
-    
-    padding: 10px;
-    margin: auto;
-}
 
-.acordeon.open,
-.acordeon:hover {
-    background-color: #7c86d8;
-    border-color: #7c86d8;
-    
-}
-
-.acordeon .educ {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    font-size: 1.2rem;
-    font-weight: 800;
-    padding: 1rem 1rem;
-    background-color: transparent;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    
-}
-
-.acordeon .contentEduc {
-    display: none;    
-
-}
-
-.acordeon.open .contentEduc {
-    display: inline-block;
-       
-    
-}
-
-.acordeon .educ::after {
-    content: '';
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 1.7rem;
-    right: 20px;
-    transform: translateY(-50%);
-    background-image: url('/assets/img/icons/seta.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: transform 0.3s ease;
-}
-
-.acordeon.open .educ::after {
-    transform: translateY(-50%) rotate(180deg);
-}
 
