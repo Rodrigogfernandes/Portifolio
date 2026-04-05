@@ -11,6 +11,7 @@
 
 .photo {
     flex-shrink: 0;
+    object-fit: cover;    
     width: 180px;
     height: 180px;
     border-radius: 50%;
